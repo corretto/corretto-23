@@ -2,6 +2,35 @@
 
 The following sections describe the changes for each release of Amazon Corretto 23.
 
+## Corretto version: 23.0.2.7.1
+Release Date: January 21, 2025
+ 
+**Target Platforms**
+ 
++ RPM-based Linux using glibc 2.17 or later, x86_64
++ Debian-based Linux using glibc 2.17 or later, x86_64
++ RPM-based Linux using glibc 2.17 or later, aarch64
++ Debian-based Linux using glibc 2.17 or later, aarch64
++ Alpine-based Linux, x86_64
++ Alpine-based Linux, aarch64
++ Windows 10 or later, x86_64
++ macos 13.0 and later, x86_64
++ macos 13.0 and later, aarch64
+ 
+The following issues are addressed in 23.0.2.7.1
+
+| Issue Name | Platform | Description | Link |
+| --- | --- | --- | --- |
+| Import jdk-23.0.2+7                                               | All      | Updates Corretto baseline to OpenJDK 23.0.2+7                                      | [jdk-23.0.2+7](https://github.com/openjdk/jdk23u/releases/tag/jdk-23.0.2%2B7) |
+| AArch64: VM crashes with SIGILL when prctl is disallowed | aarch64 | Fix crash with SIGILL when prctl is disallowed | [PR #10](https://github.com/corretto/corretto-23/pull/10) |
+| (tz) Update Timezone Data to 2024b | All | Update tz code and data to use 2024b release | [JDK-8342297](https://bugs.openjdk.org/browse/JDK-8342297) |
+
+The following CVEs are addressed in 23.0.2.7.1
+
+| CVE | CVSS | Component |
+| --- | --- | --- |
+| CVE-2025-21502 | 4.8 | hotspot/compiler |
+
 ## Corretto version: 23.0.1.8.1
 Release Date: October 15, 2024
 
